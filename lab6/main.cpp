@@ -79,13 +79,13 @@ int main()
 	myList bigList;
 	bigList.append(Circle(Point(589, 367), 450));
 	bigList.append(Circle(Point(5, 37), 40));
-	bigList.append(Circle(Point(89, 67), 50));
+	bigList.add(Rect(1, 2, 3333, 80, RED));
 
 	std::cout << smallList;
 	std::cout << bigList;
 
-	smallList = bigList;
-	//bigList = smallList;
+	//smallList = bigList;
+	bigList = smallList;
 	std::cout << smallList;
 	std::cout << bigList;
 
